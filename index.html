@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/lib/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo"><span>L</span><span>ogo</span></div>
+    </div>
+
+    <div class="layout">
+      <div class="layout__container">
+        <div class="layout__secondary-col">
+          <img
+            src="./assets/img/How-to-Make-the-Workplace-More-Inclusive-for-People-with-Disabilities-Resourcing-Edge.jpg"
+            alt=""
+          />
+          <p>
+            <strong>We are proudly non-profit</strong>, non-corporate and
+            non-compromised. Thousands of people like you help us stand up for a
+            healthy internet for all. We rely on donations to carry out our
+            mission to keep the Web open and free.
+            <strong>Will you give today?</strong>
+          </p>
+        </div>
+        <div class="layout__primary-col">
+          <h1>Donate Now</h1>
+          <form class="donate-form" action="/">
+            <div class="donate-form__fields">
+              <div class="donation-amount">
+                <input
+                  type="radio"
+                  class="donation-amount__radio"
+                  name="amount"
+                  value="200"
+                  autocomplete="off"
+                  id="donate-200"
+                />
+                <label for="donate-200" class="donation-amount__label">
+                  ₹200
+                </label>
+              </div>
+              <div class="donation-amount">
+                <input
+                  type="radio"
+                  class="donation-amount__radio"
+                  name="amount"
+                  value="350"
+                  autocomplete="off"
+                  id="donate-350"
+                />
+                <label for="donate-350" class="donation-amount__label">
+                  ₹350
+                </label>
+              </div>
+              <div class="donation-amount">
+                <input
+                  type="radio"
+                  class="donation-amount__radio"
+                  name="amount"
+                  value="500"
+                  autocomplete="off"
+                  id="donate-500"
+                />
+                <label for="donate-500" class="donation-amount__label">
+                  ₹500
+                </label>
+              </div>
+              <div class="donation-amount">
+                <input
+                  type="radio"
+                  class="donation-amount__radio"
+                  name="amount"
+                  value="1000"
+                  autocomplete="off"
+                  id="donate-1000"
+                />
+                <label for="donate-1000" class="donation-amount__label">
+                  ₹1000
+                </label>
+              </div>
+              <div class="donation-amount donation-amount--two-row">
+                <div class="donation-amount-other">
+                  <input
+                    type="radio"
+                    class="donation-amount__radio"
+                    name="amount"
+                    value="NaN"
+                    autocomplete="off"
+                    id="donate-other"
+                  />
+                  <label
+                    for="donate-other"
+                    class="donation-amount__label donation-amount-other__label"
+                  >
+                    ₹
+                  </label>
+                  <label
+                    for="amount-other-input"
+                    class="donation-amount__label--hidden"
+                    >Other amount</label
+                  >
+                  <input
+                    type="number"
+                    class="donation-amount-other__input"
+                    id="amount-other-input"
+                    placeholder="Other amount"
+                    min="145"
+                    max="10000000"
+                    data-other-amount=""
+                  />
+                </div>
+                <!-- <p class="minimum hidden">Minimum amount is 145</p> -->
+              </div>
+            </div>
+            <div class="donate-form__action">
+              <h2>Continue to Payment</h2>
+              <div class="payment">
+                <button class="payment__button" type="submit" disabled>
+                  <i class="fa fa-lock"></i>Pay Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script>
+    <script src="./assets/lib/js/jquery.min.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./assets/lib/js/script.js"></script>
+  </body>
+</html>
